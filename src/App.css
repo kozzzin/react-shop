@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 400;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +48,228 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  background-color: #282c34;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  min-height: 3rem;
+  box-sizing: border-box;
+  border-bottom: 3px solid #000;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400 !important;
+}
+
+.header .scores {
+  list-style:  none;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.header ul li {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header li a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.header a:hover {
+  color: orange;
+}
+
+.header a.active {
+  text-decoration: dotted;
+  color: orange;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+  width: 100%;
+  box-sizing: border-box;
+  gap: 30px;
+  margin: 30px auto;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1380px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ccc;
+  flex-flow: column wrap;
+}
+
+.card img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.card h3 {
+  font-size: 3rem;
+  margin: 1.5rem 0 0;
+  text-align: center;
+}
+
+.card p {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.card ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 0 auto;
+  gap: 25px;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+}
+
+.card ul li button {
+  appearance: none;
+  border: 0;
+  box-shadow: 0;
+  height: 100%;
+  cursor: pointer;
+  background-color: lightgreen;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card ul li button:hover {
+  background-color: orange;
+}
+
+.img-product-container {
+  position: relative;
+}
+
+.new,
+.discount {
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.6);
+}
+
+
+.discount {
+  right: 20px;
+  background-color: orange;
+
+}
+
+.new {
+  left: 20px;
+  background-color: yellowgreen;
+}
+
+.showcase-container {
+  background-color: #282c34;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
+
+.showcase-container .card {
+  max-width: 1200px;
+}
+
+.showcase-container .card ul {
+  background: 
+    linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+}
+
+.cart-link {
+  width: 2.5rem;
+  color: #fff;
+  filter: invert();
+}
+
+.cart-container {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  grid-auto-flow: row;
+  gap: 20px;
+  grid-template-rows: repeat(auto-fill, minmax(200px,1fr));
+}
+
+.cart-container .card {
+  padding: 0;
+  flex-flow: row;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.cart-container .card .img-product-container {
+}
+
+.cart-container .card img {
+  max-height: 200px;
+  min-width: 300px;
+}
+.cart-container .card h3 {
+  font-size: 1.5rem;
+}
+
+.cart-container .card p {
+  font-size: 1rem;
 }

@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "country": "Portugal",
+      "city": "Lisbon",
+      "price": 3000,
+      "currency": "£",
+      "description": "Couple of words about wonderful Lisbon. Looks like San-Francisco, but a little bit cheaper",
+      "days": 6,
+      "coverPhoto": "./imgs/svetlana-gumerova-gOLCAOuc7iA-unsplash.jpg",
+      "discount": false,
+      "new": false
+    },
+    {
+      "id": 2,
+      "country": "Spain",
+      "city": "Valencia",
+      "price": 1400,
+      "currency": "£",
+      "description": "Neither Barcelona, nor Madrid. But this city has its own vibe. 3 days is more than enough for first visit. Enjoy.",
+      "days": 3,
+      "coverPhoto" : "./imgs/carlos-leret-Pm9Ga7Yt8bE-unsplash.jpg",
+      "discount": false,
+      "new": false
+    },
+    {
+      "id": 3,
+      "country": "The State of Singapore",
+      "city": "Singapore",
+      "price": 7800,
+      "currency": "£",
+      "description": "Be careful not to throw garbage past the trash cans here, or you will end up in prison. This is the city of dreams, be surprised.",
+      "days": 7,
+      "coverPhoto" : "./imgs/zhu-hongzhi-tzFVsg6nWtM-unsplash.jpg",
+      "discount": true,
+      "new": false
+    }, 
+    {
+      "id": 4,
+      "country": "The United Kingdom",
+      "city": "London",
+      "price": 5600,
+      "currency": "£",
+      "description": "London is a capital of Great Britain. So don't waste time to discover it in whole. You'll have only 5 days.",
+      "days": 5,
+      "coverPhoto" : "./imgs/giammarco-q140lHKzXZY-unsplash.jpg",
+      "discount": false,
+      "new": true
+    }
+]
